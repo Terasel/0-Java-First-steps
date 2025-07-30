@@ -9,10 +9,10 @@ public class SwitchAscensor {
 
 		int pis = 0;
 		String resposta = "";
-		Scanner entrada = new Scanner(System.in);
-		
-		System.out.println("A quin pis vols anar?");
-		pis = entrada.nextInt();
+		try (Scanner entrada = new Scanner(System.in)) {
+			System.out.println("A quin pis vols anar?");
+			pis = entrada.nextInt();
+		}
 		
 		switch(pis) {
 		case 1:
